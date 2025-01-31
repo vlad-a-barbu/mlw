@@ -20,8 +20,3 @@ let write sock str =
     if n = 0 then () else go (left - n)
   in
   go buff_len
-
-let readline sock =
-  read ~stop_cond:(fun x -> String.ends_with ~suffix:"\n" x) sock
-
-let writeline sock str = write sock @@ str ^ "\n"
