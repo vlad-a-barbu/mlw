@@ -2,6 +2,7 @@
 
 (name mlw)
 
+
 (generate_opam_files true)
 
 (source
@@ -20,6 +21,7 @@
  (synopsis "A short synopsis")
  (description "A longer description")
  (depends ocaml)
+ (allow_empty)
  (tags
   ("add topics" "to describe" your project)))
 
